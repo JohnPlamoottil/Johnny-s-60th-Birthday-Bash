@@ -15,7 +15,7 @@ body, h1, h2, h3, h4, p, a {
   .header {
     height: 50vh;
     background-color: rgb(238, 238, 238);
-    background-image: url("./images/johnnys-60th-bday-bash.png");
+    background-image: url("./images/bday-cover.png");
     background-size: cover;
     background-position: center;
     text-align: center;
