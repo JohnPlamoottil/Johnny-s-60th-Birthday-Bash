@@ -1,84 +1,257 @@
+<!-- Updated Project Website on November8 2025 -->
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Johnny's 60th Birthday Bash</title>
   <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="application.js" type="application/javascript"/>
+  <script src="application.js"></script>
   <link rel="icon" type="image" href="./images/johnny.png"> 
 </head>
-<body>
+  <body>
+    <div class="confetti-bar"></div>
+  <button id="music-toggle" aria-label="Mute/Unmute music" title="Mute/Unmute music">
+    <span id="music-toggle-icon">🔊</span>
+  </button>
+  <audio id="bg-music" src="./audio/starfall.mp3" autoplay loop hidden></audio>
   <header class="header">
-    <body class="page"
-    class="overlay">
-      <h1 class="header-title"></h1>
-      <h2 class="profile_name">Johnny</h2>
-    <p class="profile_job">Please arrive between 5:00 to 5:30pm for the Surprise Party</p>
-    </div>
+    <h1 class="header-title"></h1>
   </header>
-  <section class="content" style="
-    display: flex;
+  <p class="profile_job">Please arrive between 5:00 to 5:30pm for the Surprise Party</p>
+  <div class="main-content">
+    <div class="profile-grid">
+      <div class="profile-grid-img">
+        <img src="./images/johnny.png" style="
+      margin: 0 auto;
+      height: 317px;">
+      </div>
+      <div class="profile-grid-accordion">
+        <div class="accordion">
+          <button class="accordion-toggle">Invitation <span class="accordion-icon">+</span></button>
+          <div class="accordion-content">
+            <p>Hello family, we are inviting YOU to Johnny's 60th birthday celebration. <br/>
+              <br/> The party will feature food, music, and surprises! <br/>
+              <br/> Dress to impress & bring your best wishes </p>
+            <audio controls style="margin-top: 12px; width: 100%;">
+              <source src="./audio/Invitation-audio-clip .mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <button class="accordion-toggle">Party Details <span class="accordion-icon">+</span></button>
+          <div class="accordion-content">
+              <div class="expandable-image">
+                <img class="card-image venue-image" src="./images/venue.png" alt="Venue Map">
+              </div>
+              <p class="card-text">
+                <br/>Date: Friday, March 24, at 5:00 pm.
+                <br/> Please message Leena on your food preference <br/>
+                  <div class="expandable-image">
+                    <img class="card-image folders-image" src="./images/FOOD POLL.png" alt="food preferences">
+                  </div>
+                <br/>Please save the date in your calendar! <br/>Thanks luv you all ❤️ 
+                <br/><a href="https://www.evite.com/event/02F3HEZKBDVY24HRIEPNUCSJCDT2PI">Evite Link to RSVP</a>
+              </p>
+          </div>    
+          <button class="accordion-toggle">What To Send <span class="accordion-icon">+</span></button>
+          <div class="accordion-content">
+            <p class="card-text">
+              <br/>Also we are requesting everyone to look for photos from your antique photo albums as well as digital libraries for any photos you would like to share for a slideshow presentation. <br/>
+              <br/>Please scan any photos using your smartphone (android or iPhone) and upload it to the google drive link provided in the appropriate folders. <br/>
+                <div class="expandable-image">
+                  <img class="card-image folders-image" src="./images/GD_selected_folders.png" alt="where to post your photos">
+                </div>
+              <br/>If you are able, we would love to have a video from each of your families wishing Johnny a happy birthday and sharing something you love about him. 
+              <br/>Thanks luv you all ❤️ <br/>
+              <a href="https://drive.google.com/drive/folders/1HN5pGBfTL4wOUpRjtwF_c43Nd4MH_Zwd?usp=sharing">Leena's Google Drive Link</a>
+              <br/>Please drop your photos in its respectable folders. Thanks.
+              <br/>Submit photos and videos no later than Saturday, February 25, 2023 by 11:59pm.
+            </p>
+          </div>    
+        </div>
+      </div>
+    </div>
 
-">
-<img src="./images/johnny.png" style="
-    margin: 0 auto;
-    height: 317px;
-">
-</div> class="card">
-  <div class="card__content">
-    <h2 class="card__title">Title</h2>
-    <p class="card__text">This is some text</p>
-    <p class="card__date">01/23/2023</p>
+    <!-- Gallery Accordions Start -->
+    <div class="gallery-accordions">
+  <button class="accordion-toggle">Gallery: Photos <span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <div class="gallery-grid gallery-photos">
+          <!-- actual images -->
+          <img src="./images/dads bday photos/IMG_0593.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0594.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0595.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0595.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0596.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0596.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0597.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0598.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0599.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0599.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0600.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0601.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0602.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0603.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0604.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0605.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0606.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0607.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0608.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0611.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0612.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0613.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0615.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0616.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0617.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0618.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0619.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0620.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0621.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0622.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0623.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0624.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0625.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0628.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0629.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0630.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0633.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0636.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0640.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0660.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0661.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0662.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0663.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0664.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0665.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0666.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0667.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0668.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0669.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0670.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0671.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0672.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0673.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0674.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0675.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0676.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0677.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0678.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0679.png" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0680.png" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/IMG_0681.png" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/ammachi in front of dads cake.jpg" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/backdrop.JPG" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/backdrop2.JPG" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/top view of cake.JPG" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/birthday cake 2.JPG" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/birthday cake 3 .JPG" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/couples_john_leena.JPG" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/family pic.jpg" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/family_bad_pose.JPG" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/george_with_johnny.JPG" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/guys photo.JPG" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/jenna_c_dad.JPG" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/jessie_c_johnny.JPG" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/jessie_georgie.JPG" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/jessie_johnny_props.JPG" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/johnny_denny.JPG" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/johnny_mamu.JPG" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/kottukapally picture.jpg" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/mamu_johnny.JPG" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/michael_johnny.JPG" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/milly_with_johnny.JPG" alt="Gallery Photo 3" class="gallery-thumb">
+          <img src="./images/dads bday photos/motty_premma.JPG" alt="Gallery Photo 1" class="gallery-thumb">
+          <img src="./images/dads bday photos/pylappan_gracie.JPG" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/sunny_lissy.jpg" alt="Gallery Photo 3" class="gallery-thumb">
+
+          <!-- template for adding more photos
+          <img src="./images/dads bday photos/" alt="Gallery Photo 2" class="gallery-thumb">
+          <img src="./images/dads bday photos/" alt="Gallery Photo 3" class="gallery-thumb"> -->
+
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+  <button class="accordion-toggle">Gallery: Videos <span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <div class="gallery-grid gallery-videos">
+          <!-- Example video thumbnails/links -->
+          <a href="https://www.youtube.com/watch?v=NSkenY-fVN8" target="_blank" class="gallery-video-thumb">
+            <img src="https://img.youtube.com/vi/NSkenY-fVN8/hqdefault.jpg" alt="Video 1">
+            <span>Birthday Slideshow</span>
+          </a>
+
+          <a href="https://youtu.be/OKRttf68524" target="_blank" class="gallery-video-thumb">
+            <img src="https://img.youtube.com/vi/NSkenY-fVN8/hqdefault.jpg" alt="Video 1">
+            <span>Accumulation of Videos</span>
+          </a>
+
+          <!-- Add more video links as needed -->
+        </div>
+      </div>
+    </div>
+    <!-- Gallery Accordions End -->
+
+    <a class="youtube-link-birthday" href="#" id="youtube-modal-open">🎉 Watch the Official Slideshow 🎥</a>
+    <div id="youtube-modal" class="youtube-modal">
+      <div class="youtube-modal-content">
+        <span class="youtube-modal-close" id="youtube-modal-close">&times;</span>
+        <iframe id="youtube-iframe" width="100%" height="360" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
-</div>
-</section>
-  <section class="content">
-    <audio controls>
-      <br/>PRESS PLAY
-      <source src="./audio/starfall.mp3" type="audio/mpeg">
-      <a href="./audio/starfall.mp3">Piano Instrumental</a>
-      <embed src="./audio/starfall.mp3" autostart=’true’ volume=’90’ hidden=’TRUE’ height=’0′ width=’0′>
-    </audio>
-    <div class="card">
-      <img class="card-image" src="./images/venue.png">
-      <h3 class="card-title">Party Details</h3>
-      <p class="card-text">
-        <br/>Hello family,We are inviting YOU to Johnny's 60th birthday celebration. 
-        <br/>Date: Friday, March 24, at 5:00 pm.
-        <br/>Please save the date in your calendar!  Thanks luv you ❤️  
-        <a href="https://www.evite.com/event/02F3HEZKBDVY24HRIEPNUCSJCDT2PI">Evite Link to RSVP</a></p>
-    </div>
-    <div class="card">
-      <img class="card-image" src="./images/dads bday photos (58) i12pro/IMG_0593.jpg">
-      <img class="card-image" src="./images/dads bday photos (58) i12pro/IMG_0594.jpg">
-      <img class="card-image" src="./images/dads bday photos (58) i12pro/IMG_0595.jpg">
-      <img class="card-image" src="./images/dads bday photos (58) i12pro/IMG_0596.jpg">
-      <img class="card-image" src="./images/dads bday photos (58) i12pro/IMG_0597.jpg">
-      <img class="card-image" src="./images/dads bday photos (58) i12pro/IMG_0598.jpg">
-      <img class="card-image" src="./images/dads bday photos (58) i12pro/IMG_0640.JPG">
-      <img class="card-image" src="./">
-      <h3 class="card-title">What to Send</h3>
-      <ul class="card-text">
-        <p><li>Also we are requesting everyone to look for photos from your antique photo albums as well as digital libraries for any photoS you would like to share for a slideshow presentation; please scan any photos using ur smartphone (android or iPhone) and upload it to the google drive link provided in the appropriate folders. </li></p>
-        
-        <li>If you are able, we would love to have a video from each of your families wishing Johnny a happy birthday and sharing something you love about him..</li></p>  
-
-        <li>google drive link:
-          <a href="https://drive.google.com/drive/folders/1HN5pGBfTL4wOUpRjtwF_c43Nd4MH_Zwd?usp=sharing">GOOGLE DRIVE LINK</a>
-          <a href="https://youtu.be/NSkenY-fVN8
-          https://youtu.be/NSkenY-fVN8"
-          <br/> <p></li>press the link above.</p>
-
-          <p><li>please drop your photos in its respectable folders Thanks </li></p>
-      
-          <p><li>Please submit photos and videos no later than Saturday, February 25 2023 by11:59pm Thank you for understanding </li></p>
-        
-          <p><li>Thanks</li></p>           
-      </ul>
-    </div>
-  </section>
+  <section class="content" style="display: flex;">
   <footer class="footer"> 
-    <h4 class="footer-author"> 2023 - Plamoottil Family</h4> 
+    <div class="footer-content">
+      <span class="footer-emoji" aria-label="cake">🎂</span>
+      <h4 class="footer-author">Celebrating Johnny's 60th Birthday! &nbsp;|&nbsp; March 2023 - Plamoottil Family</h4>
+      <div class="footer-copyright"></div>
+    </div>
+    <div class="confetti"></div>
   </footer>
 </body>
 </html>
+
+    <!-- Expanded Gallery Image Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+      <span class="gallery-modal-close" id="gallery-modal-close">&times;</span>
+      <img id="gallery-modal-img" class="gallery-modal-img" src="" alt="Expanded Photo" />
+      <button id="gallery-modal-next" class="gallery-modal-next">&#9654;</button>
+    </div>
+    <script>
+    // Gallery Expand and Next Feature
+    document.addEventListener('DOMContentLoaded', function() {
+      const galleryThumbs = document.querySelectorAll('.gallery-thumb');
+      const modal = document.getElementById('gallery-modal');
+      const modalImg = document.getElementById('gallery-modal-img');
+      const modalClose = document.getElementById('gallery-modal-close');
+      const modalNext = document.getElementById('gallery-modal-next');
+      let currentIdx = 0;
+      let images = Array.from(galleryThumbs).map(img => img.src);
+
+      function openModal(idx) {
+        currentIdx = idx;
+        modalImg.src = images[currentIdx];
+        modal.style.display = 'flex';
+      }
+      function closeModal() {
+        modal.style.display = 'none';
+      }
+      function showNext() {
+        currentIdx = (currentIdx + 1) % images.length;
+        modalImg.src = images[currentIdx];
+      }
+      galleryThumbs.forEach((img, idx) => {
+        img.addEventListener('click', () => openModal(idx));
+      });
+      modalClose.addEventListener('click', closeModal);
+      modalNext.addEventListener('click', showNext);
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (modal.style.display === 'flex') {
+          if (e.key === 'Escape') closeModal();
+          if (e.key === 'ArrowRight') showNext();
+        }
+      });
+    });
+    </script>
