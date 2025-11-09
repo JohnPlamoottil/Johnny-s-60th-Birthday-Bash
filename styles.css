@@ -570,13 +570,15 @@ body {
 }
 .footer-author {
   font-size: 1.5em;
-  color: #b94e4e;
   font-family: "Amita", cursive;
   background: rgba(255, 255, 255, 0.7);
   display: inline-block;
   padding: 0.5em 1.5em;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 20px;
+  color: indianred;
+  margin: auto;
 }
 
 /* Confetti animation */
@@ -630,13 +632,6 @@ body {
   }
 }
 
-.footer-author {
-  font-size: 20px;
-  font-family: "Amita", cursive;
-  color: indianred;
-  margin: auto;
-}
-
 /* MEDIA QUERIES */
 
 /* Desktop - 1280px and larger */
@@ -650,7 +645,7 @@ body {
 }
 
 /* Tablet - 768px to 1279px */
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .header {
     height: 35vh;
     background-position: center;
@@ -710,5 +705,41 @@ body {
   }
   .content {
     padding: 0 10px;
+  }
+  .youtube-subtitle {
+    font-family: sans-serif, "Amita";
+    font-size: 15px;
+  }
+  .gallery-video-thumb {
+    font-family: sans-serif, "Amita";
+    font-size: 5px;
+  }
+  .youtube-link-birthday {
+    font-family: sans-serif, "Amita";
+    font-size: 5px;
+  }
+  .youtube-modal-close {
+    font-family: sans-serif, "Amita";
+    font-size: 5px;
+  }
+  .accordion {
+    font-family: sans-serif, "Amita";
+    font-size: 5px;
+  }
+  .accordion-toggle {
+    font-family: sans-serif, "Amita";
+    font-size: 5px;
+  }
+  .profile_job {
+    font-family: sans-serif, "Amita";
+    font-size: 5px;
+  }
+  .footer {
+    font-family: sans-serif, "Amita";
+    font-size: 5px;
+  }
+  .footer-author {
+    font-family: sans-serif, "Amita";
+    font-size: 5px;
   }
 }
