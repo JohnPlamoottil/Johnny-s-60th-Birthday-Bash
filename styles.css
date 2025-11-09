@@ -1,3 +1,13 @@
+/* Subtitle below YouTube button */
+.youtube-subtitle {
+  display: block;
+  text-align: center;
+  font-family: "Amita", cursive;
+  color: #b94e4e;
+  font-size: 1em;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
 /* Gallery Modal for Expanded Images */
 .gallery-modal {
   display: none;
@@ -398,7 +408,7 @@ body {
 /* Center the profile_job text below the bday-cover image */
 .profile_job {
   display: block;
-  font-family: "Amita", cursive;
+  font-family: "sans", cursive;
   width: 100%;
   text-align: center;
   margin: 0 auto 16px auto;
